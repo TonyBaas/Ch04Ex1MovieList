@@ -12,7 +12,8 @@ namespace MovieList.Controllers
         }
         public IActionResult Index()
         {
-            var movies = context.Movies.OrderBy(m => m.Name).ToList(); return View(movies);
+            var movies = context.Movies.OrderBy(m => m.Name).ToList();
+            return View(movies);
         }
     }
 }
