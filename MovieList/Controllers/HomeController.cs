@@ -9,8 +9,6 @@ namespace MovieList.Controllers
         public IActionResult Index()
         {
             return View();
-        }
-
-        
+        } 
     }
 }
