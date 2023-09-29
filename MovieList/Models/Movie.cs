@@ -3,7 +3,8 @@ namespace MovieList.Models
 {
     public class Movie
     {
-        // EF Core will configure the database to generate this value public int MovieId { get; set; }
+        // EF Core will configure the database to generate this value
+        public int MovieId { get; set; }
         [Required(ErrorMessage = "Please enter a name.")] 
         public string Name { get; set; }
         [Required(ErrorMessage = "Please enter a year.")][Range(1889, 2999, ErrorMessage = "Year must be after 1889.")]
